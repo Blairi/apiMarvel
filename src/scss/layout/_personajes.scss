@@ -1,0 +1,19 @@
+.contenedor-personajes{
+	@include tablet{
+		@include grid(3, 1rem);
+	}
+	.personaje{
+		text-align: center;
+		background: $gris;
+		.thumb{
+			height: 40rem;
+			img{
+				object-fit: cover;
+				height: 40rem;
+			}
+		}
+		.nombre-personaje{
+			color: darken($naranja, 20);
+		}
+	}
+}
